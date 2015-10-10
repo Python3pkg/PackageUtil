@@ -7,7 +7,7 @@ README = open(os.path.join(here, 'README.rst')).read()
 
 setup(
 	name='PackageUtil',
-	version='1.1',
+	version='1.2',
 	author='Philip Trauner',
 	author_email='philip.trauner@aol.com',
 	url='https://github.com/PhilipTrauner/PackageUtil',
