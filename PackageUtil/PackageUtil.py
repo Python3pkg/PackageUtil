@@ -35,6 +35,8 @@ class Package:
 			for file in subprocess.check_output(["pkgutil", "--only-files", "--files", self.package_id]).decode().split("\n")[:-1]:
 				if not self.location:
 					self.location = "/"
+				if self.location == "/" and self.volume == "/":
+					self.volume = ""
 				files.append("%s%s%s" % (self.volume, self.location + "/" if self.location[-1] != "/" else self.location, file))
 			self._files = files
 		return self._files
