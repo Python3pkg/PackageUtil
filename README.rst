@@ -1,6 +1,8 @@
 PackageUtil
 ===========
 
+Remaking this in the near future. It works but it isn't pretty.
+
 PackageUtil is a simple command line tool for OS X that rids you of the pain that is pkgutil.
 It can:
 
