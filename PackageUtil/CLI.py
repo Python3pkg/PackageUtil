@@ -37,7 +37,7 @@ def main():
 				if package.package_id == package_name:
 					for file in package.files:
 						print(file)
-					print("Summary: %s" % package.common_prefix)
+					print(("Summary: %s" % package.common_prefix))
 		help_required = False
 	if args.pkgs:
 		for package in PackageUtil.get_installed_packages(include_apple_packages=args.include_apple_pkgs):

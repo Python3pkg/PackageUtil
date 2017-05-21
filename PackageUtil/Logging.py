@@ -15,7 +15,7 @@ def print_out(message, color):
 				module = inspect.getmodule(i[0]).__name__
 	else:
 		module = inspect.getmodule(stack[2][0]).__name__
-	print("[%s] %s: %s%s\033[0m" % (time.strftime("%x %H:%M:%S"), module, color, message))
+	print(("[%s] %s: %s%s\033[0m" % (time.strftime("%x %H:%M:%S"), module, color, message)))
 
 
 def info(message):
